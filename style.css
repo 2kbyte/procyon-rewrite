@@ -42,19 +42,20 @@ a {
 }
 
 .nav-items {
+    display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
 }
 
 .nav-items li {
-    display: inline;
+    align-content: center;
 }
 
 .nav-items li a {
     text-decoration: none;
     color: var(--text-color);
-    padding: 10px;
+    padding: 15px 10px;
     transition: .15s ease-in-out;
 }
 
