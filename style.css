@@ -3,7 +3,7 @@
 
 :root {
     --bg-color: #131415;
-    --bg-color2: #1b1b1e;
+    --bg-color2: #1d1d1f;
     --accent-color: #ac4646;
     --accent-color2: #ffc8c8;
     --text-color: #ffffff;
@@ -64,6 +64,7 @@ a {
 }
 
 .header-right {
+    display: flex;
     width: 80px;
 }
 
@@ -93,12 +94,42 @@ a {
     overflow: hidden;
 }
 
+.first-box {
+    border-radius: 5px;
+    padding: 15px 20px;
+    background-color: var(--bg-color2);
+    margin-top: 40px;
+}
+
 .box {
     width: 100%;
     background-color: var(--bg-color2);
     border-radius: 5px;
-    padding: 20px;
+    padding: 15px 20px;
 }
+
+h2 {
+    margin: 0;
+    text-shadow: 3px 3px 1px var(--accent-color);
+    font-family: 'Manrope', 'Noto Sans', sans-serif;
+}
+
+p {
+    font-family: 'Manrope', 'Noto Sans', sans-serif;
+    font-weight: 500;
+}
+
+#particles-js {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color2);
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+  
+
 /* HOVER EFFECTS */
 .nav-items li a:hover, .button:hover {
     color: var(--accent-color2);
