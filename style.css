@@ -53,6 +53,10 @@ a {
     align-content: center;
 }
 
+.nav-items li:not(:first-child) {
+    margin-top: 1px;
+}
+
 .nav-items li a {
     text-decoration: none;
     color: var(--text-color);
@@ -159,6 +163,17 @@ p {
     color: var(--text-color);
     text-decoration: none;
     pointer-events: auto;
+}
+
+
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-color);
+    height: 100px;
+    width: 100%;
 }
 
 /* HOVER EFFECTS */
