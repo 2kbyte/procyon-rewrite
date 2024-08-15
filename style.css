@@ -3,7 +3,7 @@
 
 :root {
     --bg-color: #131415;
-    --bg-color2: #28282b;
+    --bg-color2: #1d1d1f;
     --accent-color: #ac4646;
     --accent-color2: #ffc8c8;
     --button-hover: #c24f4f;
@@ -131,24 +131,20 @@ p {
 
 .particle-text {
     position: absolute;
+    padding: 30px;
     pointer-events: none;
     font-family: 'Manrope', 'Noto Sans', sans-serif;
     margin-top: -50px;
-    line-height: 80px;
-    background-color: #3e39393d;
+    background-color: #3a22223d;
     width: 550px;
+    line-height: 40px;
     border-radius: 10px;
+    box-shadow: 0 0 2px var(--accent-color);
 }
 
 .particle-text h1 {
-    margin: 0;
     text-shadow: 3px 3px 1px var(--bg-color);
     font-size: 2.5rem;
-}
-
-.particle-text p {
-    margin: 0;
-    margin-top: -50px;
 }
 
 .particle-text p {
