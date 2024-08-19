@@ -11,11 +11,14 @@
 }
 
 body {
+    font-family: 'Manrope', 'Noto Sans', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
     padding: 0;
     margin: 0;
 }
+
+/* apply when cant scroll: html, body {margin: 0; height: 100%; overflow: hidden} */
 
 a {
     transition: .1s ease-in-out;
@@ -74,6 +77,38 @@ a {
     width: 80px;
 }
 
+.setting-wrapper {
+    position: fixed;
+    overflow: auto;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(18,22,28,.8);
+    z-index: -1;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transition: opacity .2s ease;
+}
+
+.setting {
+    position: absolute;
+    box-shadow: 1px 1px 2px var(--accent-color);
+    background-color: var(--bg-color2);
+    padding: 10px;
+    width: 250px;
+    left: 68%;
+    top: 60px;
+    border-radius: 6px;
+    z-index: 1;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.setting-header {
+    font-weight: 600;
+}
+
 .button {
     color: var(--text-color);
     cursor: pointer;
@@ -92,12 +127,20 @@ a {
     padding: 0 250px
 }
 
-.box-wrapper {
+.box-wrapper1, .box-wrapper2 {
     display: grid;
     grid-column-gap: 60px;
-    grid-template-columns: auto 545px;
     margin-top: 40px;
     overflow: hidden;
+}
+
+.box-wrapper1 {
+    grid-template-columns: auto 50%;
+}
+
+.box-wrapper2 {
+    grid-template-columns: auto 545px;
+    margin-bottom: 40px;
 }
 
 .first-box {
@@ -164,8 +207,6 @@ p {
     text-decoration: none;
     pointer-events: auto;
 }
-
-
 
 .footer {
     display: flex;
