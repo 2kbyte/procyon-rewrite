@@ -6,7 +6,10 @@ let settingVisible = false;
 function settings() {
     if (settingVisible) {
         settingOverlay.style.opacity = 0;
-        settingOverlay.style.zIndex = -1;
+        
+        setTimeout(function() {
+            settingOverlay.style.zIndex = -1;
+        }, 200)
 
         htmlBody.style.overflow = "visible";
     } else {
