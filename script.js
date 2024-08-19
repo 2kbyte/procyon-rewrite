@@ -29,38 +29,3 @@ settingOverlay.addEventListener("click", function(event) {
         settings();
     }
 })
-
-
-// document.getElementById("setting-parent").addEventListener("click", function(event) {
-//     if (event.currentTarget.id === 'setting-parent') {
-//         console.log("test child")
-//     } else if (event.currentTarget.id === 'setting-child') {
-//         console.log("test parent")
-//         event.stopPropagation();
-//         event.preventDefault();
-//     }
-// })
-
-// document.getElementById("setting-child").addEventListener("click", function() {
-//     console.log("test child")
-// })
-
-
-// function settingOverlay(event, visible) {
-//     var settings = document.getElementsByClassName("setting-wrapper")[0];
-//     var body = document.getElementsByTagName("body")[0];
-
-//     if (event.target != document.getElementById('setting-child')) {
-//         if (visible) {
-//             settings.style.opacity = 0;
-//             settings.style.zIndex = -1;
-            
-//             body.style.overflow = "visible";
-//         } else {
-//             settings.style.opacity = 1;
-//             settings.style.zIndex = 100;
-    
-//             body.style.overflow = "hidden";
-//         }
-//     }
-// }
