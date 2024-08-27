@@ -1,0 +1,63 @@
+.main-box {
+    border-radius: 5px;
+    padding: var(--box-padding);
+    background-color: var(--bg-color2);
+    margin-top: 40px;
+}
+
+.main-box h1 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: 'Manrope', 'Noto Sans', sans-serif;
+}
+
+.counter-box-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.counter-box {
+    background-color: var(--bg-color);
+    height: 7rem;
+    width: 18rem;
+    border: 1px solid var(--accent-color-unhover);
+    margin: 5px;
+    padding: var(--box-padding);
+    transition: .2s ease-in-out;
+    border-radius: 10px;;
+}
+
+.counter-elements {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.count-button {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2rem;
+    width: 60px;
+    height: 45px;
+}
+
+.count {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+/* HOVER EFFECTS */
+.counter-box:hover {
+    background-color: var(--bg-color-hover);
+    border-color: var(--accent-color);
+}
+
+.count-button:hover {
+    background-color: var(--accent-color-hover)
+}
