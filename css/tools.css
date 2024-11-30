@@ -12,16 +12,13 @@
 }
 
 .counter-box-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+
 }
 
 .counter-box {
     background-color: var(--bg-color);
-    height: 7rem;
-    width: 18rem;
     border: 1px solid var(--accent-color-unhover);
     margin: 5px;
     padding: var(--box-padding);
